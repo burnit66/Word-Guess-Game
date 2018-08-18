@@ -1,33 +1,37 @@
 var selectableWords = // Word list
     [
-        "lion",
-        "dog",
-        "elephant",
-        "bear",
-        "flamingo",
-        "parrot",
-        "bobcat",
-        "penguin",
-        "seal",
-        "dolphin",
-        "tiger",
-        "panda",
-        "giraffe",
-        "leopard",
-        "spider",
-        "turtle",
-        "frog",
-        "puffin",
-        "ostrich",
-        "hedgehog",
-        "cheetah",
-        "chinchilla",
-        "woodchuck",
-        "lemur",
-        "gazelle",
-        "chimpanzee",
-        "orangutan",
-        "mongoose",
+        "cardinals",
+        "falcons",
+        "ravens",
+        "bills",
+        "panthers",
+        "bears",
+        "bengals",
+        "browns",
+        "cowboys",
+        "broncos",
+        "lions",
+        "packers",
+        "texans",
+        "colts",
+        "jaguars",
+        "chiefs",
+        "chargers",
+        "rams",
+        "dolphins",
+        "vikings",
+        "patriots",
+        "saints",
+        "giants",
+        "jets",
+        "raiders",
+        "eagles",
+        "steelers",
+        "fortyniners",
+        "seahawks",
+        "buccaneers",
+        "titans",
+        "redskins"
     ];
 
 const maxTries = 10; // Maximum number of tries player has
@@ -59,6 +63,7 @@ function resetGame() {
     }
     // Hide game over and win images/text
     document.getElementById("pressKeyTryAgain").style.cssText = "display: none";
+    document.querySelector(".play").textContent = "Press Any Key to Get Started!";
   
     // Show display
     updateDisplay();
@@ -128,10 +133,12 @@ function checkWin() {
         document.getElementById("pressKeyTryAgain").style.cssText = "display: block";
         wins++;
         hasFinished = true;
+        alert("You win!");
     }
 };
 
 document.onkeydown = function (event) {
+    document.querySelector(".play").style.display = "none";
     // If we finished a game, dump one keystroke and reset.
     if (hasFinished) {
         resetGame();

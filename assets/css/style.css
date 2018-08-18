@@ -4,7 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     text-shadow: 0 0 2px white, -1px -1px 2px white, 1px 0 2px white, 1px 1px 2px white;
-    /* background: url('https://img.clipartxtras.com/7d26b55eca97b6eb022caf04e716dd04_how-to-draw-200-zoo-animals-the-funniest-animal-2017-zoo-animals-clipart-with-names_1600-1131.jpeg') no-repeat; */
+    background: url('http://publin.ie/wp-content/uploads/2016/09/nflteams.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -43,7 +43,3 @@ h6 {
     background-color: rgba(89, 0, 255, 0.747);
     border: black;
 }
-
-/* #totalWins, #currentWord, #remainingGuesses, #guessedLetters {
-    line-height: 20px;
-} */
